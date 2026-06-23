@@ -23,6 +23,9 @@ importers:
       '@astrojs/tailwind':
         specifier: ^6.0.2
         version: 6.0.2(astro@5.13.4(@types/node@26.0.0)(jiti@1.21.7)(rollup@2.80.0)(stylus@0.64.0)(terser@5.48.0)(typescript@5.9.3)(yaml@2.9.0))(tailwindcss@3.4.19(yaml@2.9.0))
+      '@cut-shade/baspark':
+        specifier: ^1.6.1
+        version: 1.6.1
       '@expressive-code/core':
         specifier: ^0.41.3
         version: 0.41.7
@@ -888,6 +891,9 @@ packages:
   '@ctrl/tinycolor@4.2.0':
     resolution: {integrity: sha512-kzyuwOAQnXJNLS9PSyrk0CWk35nWJW/zl/6KvnTBMFK65gm7U1/Z5BqjxeapjZCIhQcM/DsrEmcbRwDyXyXK4A==}
     engines: {node: '>=14'}
+
+  '@cut-shade/baspark@1.6.1':
+    resolution: {integrity: sha512-QiIhKtPj/QWjkY9ueaJ+uWSvdFiV0OLFC173li6LFPPeKSrAta7r3vTTpqUNu260Z/MXeAumnkC7rPx41j9a0g==}
 
   '@emmetio/abbreviation@2.3.3':
     resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}
@@ -6091,6 +6097,8 @@ snapshots:
       postcss-selector-parser: 7.1.4
 
   '@ctrl/tinycolor@4.2.0': {}
+
+  '@cut-shade/baspark@1.6.1': {}
 
   '@emmetio/abbreviation@2.3.3':
     dependencies:

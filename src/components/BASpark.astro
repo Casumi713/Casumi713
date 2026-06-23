@@ -1,0 +1,34 @@
+---
+// BASpark 粒子特效组件
+// 碧蓝档案风格 — 鼠标点击火花 + 拖尾效果
+---
+
+<script>
+import { BASpark } from "@cut-shade/baspark";
+
+function initBaspark() {
+	// 如果已经初始化过，跳过
+	if (window.__basparkInitialized) return;
+	window.__basparkInitialized = true;
+
+	const spark = new BASpark(document.body, {
+		color: "255,180,200", // 粉色 RGB，配合二次元主题色
+		scale: 1.2, // 粒子大小
+		opacity: 0.85, // 透明度
+		trailSpeed: 1, // 拖尾速度
+		clickSpeed: 1, // 点击速度
+		trailWidth: 1, // 拖尾宽度
+		sparkSize: 1, // 火花大小
+		clickScale: 1, // 点击缩放
+		alwaysTrail: false, // 是否总是显示拖尾（鼠标移动即拖尾）
+		zIndex: 9999, // 图层层级
+	});
+}
+
+// DOM 加载完成后初始化
+if (document.readyState === "loading") {
+	document.addEventListener("DOMContentLoaded", initBaspark);
+} else {
+	initBaspark();
+}
+</script>

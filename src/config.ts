@@ -219,14 +219,14 @@ export const navBarConfig: NavBarConfig = {
 };
 
 export const profileConfig: ProfileConfig = {
-	avatar: "assets/images/avatar.gif", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
+	avatar: "assets/images/casuki-transparent.webp", // 相对于 /src 目录。如果以 '/' 开头，则相对于 /public 目录
 	name: "Casumi",
 	bio: "✨ 在代码和二次元之间反复横跳 ✨",
 	links: [
 		{
 			name: "GitHub",
 			icon: "fa6-brands:github",
-			url: "https://github.com/Casumi",
+			url: "https://github.com/ca-suki",
 		},
 		{
 			name: "Codeberg",
@@ -394,7 +394,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 		//hidden:不显示侧边栏(桌面端)   drawer:抽屉模式(移动端不显示)   sidebar:显示侧边栏
 		layout: {
 			// 移动端：抽屉模式
-			mobile: "sidebar",
+			mobile: "drawer",
 			// 平板端：显示侧边栏
 			tablet: "sidebar",
 			// 桌面端：显示侧边栏
@@ -404,7 +404,7 @@ export const sidebarLayoutConfig: SidebarLayoutConfig = {
 };
 
 export const sakuraConfig: SakuraConfig = {
-	enable: true, // 默认关闭樱花特效
+	enable: false, // 默认关闭樱花特效
 	sakuraNum: 21, // 樱花数量
 	limitTimes: -1, // 樱花越界限制次数，-1为无限循环
 	size: {
