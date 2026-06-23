@@ -12,6 +12,9 @@ jobs:
           node-version: 22
       - run: corepack enable && pnpm install --frozen-lockfile
       - run: pnpm build
+        env:
+          ENABLE_CONTENT_SYNC: true
+          CONTENT_REPO_URL: https://codeberg.org/Casumi/Blog-Content.git
       - uses: https://codeberg.org/git-pages/action@v2
         with:
           token: ${{ forge.token }}

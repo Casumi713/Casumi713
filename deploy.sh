@@ -9,7 +9,7 @@ echo "🚀 构建站点..."
 
 # 复制源码到 /tmp 构建
 rm -rf "$BUILD_DIR"
-cp -r "$(dirname "$0")" "$BUILD_DIR"
+rsync -a --exclude=node_modules --exclude=.git "$(dirname "$(readlink -f "$0")")/" "$BUILD_DIR"
 cd "$BUILD_DIR"
 
 # 确保 .npmrc 配置正确
